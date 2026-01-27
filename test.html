@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title> Aerojet Costa Rica & Central America | #1 Ground Handling Experts 🇨🇷 🇭🇳 🇬🇹 🇸🇻 🇵🇦</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="Premium ground handling services for private, cargo, and commercial flights in Costa Rica and Central America. 24/7 VIP and crew support.">
+<meta name="keywords" content="ground handling, private flight Costa Rica, cargo flight logistics, commercial flight support, VIP airport services, Aerojet, charter coordination Central America">
+
+
+<meta property="og:title" content="Aerojet – Ground Handling Experts in Central America">
+<meta property="og:description" content="Private, cargo, and commercial flight support in Costa Rica, Honduras, Guatemala, El Salvador y Panama.">
+<meta property="og:image" content="https://www.claylacy.com/wp-content/uploads/2019/08/Webp.net-gifmaker.gif">
+<meta property="og:url" content="https://www.aerojethandling.com/">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="/img/aerojetfavicon.png" type="image/png">
+
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Airplane Animation Styles -->
+        <style>
+            /* Barra de progreso - contenedor */
+            .flight-path {
+                position: fixed;
+                right: 100px;
+                top: 50px;
+                width: 20px;
+                height: calc(100vh - 100px);
+                background: rgba(200, 200, 200, 0.4);
+                border-radius: 10px;
+                z-index: 1000;
+                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Barra de progreso - relleno */
+            .progress-fill {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0%;
+                background: linear-gradient(to bottom, 
+                    #85c1e9 0%, 
+                    #5dade2 50%, 
+                    #3498db 100%);
+                border-radius: 10px;
+                transition: height 0.1s ease-out;
+                box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+            }
+
+            /* Avión */
+            .airplane {
+                position: fixed;
+                right: 100px;
+                font-size: 50px;
+                transform: translateX(50%);
+                z-index: 1001;
+                transition: transform 0.3s ease-out;
+                filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+            }
+
+            .airplane.going-down {
+                transform: translateX(50%) rotate(0deg);
+            }
+
+            .airplane.going-up {
+                transform: translateX(50%) rotate(180deg);
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .flight-path {
+                    right: 20px;
+                    width: 15px;
+                }
+                
+                .airplane {
+                    right: 20px;
+                    font-size: 35px;
+                }
+            }
+        </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1238649164662474');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1238649164662474&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PYNBFGPML"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1PYNBFGPML');
+</script>
+
+
+    </head>
+
+    <body>
+
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZLP8PXZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        <!-- Barra de progreso con avión -->
+        <div class="flight-path">
+            <div class="progress-fill"></div>
+        </div>
+        
+        <!-- Avión -->
+        <div class="airplane going-down">✈️</div>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex">
+                        <a href="#" class="text-muted header-top-text me-4"><i class="fas fa-envelope text-secondary me-2"></i>Aerojet Group</a>
+                        <a href="#" class="text-muted header-top-text me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+506 24414487 ext 105</a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 ms-lg-auto d-flex justify-content-lg-end justify-content-center align-items-center mb-2 mb-lg-0">
+    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2"
+       href="https://www.instagram.com/aerojethandlinggroup/">
+      <i class="fab fa-instagram fw-normal text-secondary"></i>
+    </a>
+    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2"
+       href="https://www.facebook.com/aerojethandlinggroup/">
+      <i class="fab fa-facebook-f fw-normal text-secondary"></i>
+    </a>
+    <a class="btn btn-sm btn-outline-light btn-square rounded-circle"
+       href="https://cr.linkedin.com/company/aerojet-handling-group">
+      <i class="fab fa-linkedin-in fw-normal text-secondary"></i>
+    </a>
+  </div>
+
+</div>
+                
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="display-5 text-secondary m-0"><img src="img/logo-aerojet1.png" class="img-fluid" alt=""> </h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                       <a href="book.html" class="nav-item nav-link">Pre-Book</a>
+
+                       <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Services</span></a>
+                            <div class="dropdown-menu m-0">
+                                <a href="private-flights.html" class="dropdown-item">Charter Flights</a>
+                                <a href="cargo.html" class="dropdown-item">Cargo</a>
+                                <a href="commercial.html" class="dropdown-item">Commercial</a>
+
+                            </div>
+                        </div>
+                       
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Countries</span></a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item">Costa Rica</a>
+                                <a href="#" class="dropdown-item">Guatemala</a>
+                                <a href="#" class="dropdown-item">Honduras</a>
+                                <a href="#" class="dropdown-item">El Salvador</a>
+                                <a href="#" class="dropdown-item">Panamá</a>
+                            </div>
+                        </div> <a href="#stations" class="nav-item nav-link">Contact</a>
+                    </div>
+
+
+                    <a href="book.html" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Book Now</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+
+        <!-- Services Start -->
+        <div class="container-fluid service overflow-hidden pt-5">
+            <div class="container py-5">
+                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                    </div>
+                        <h5 class="sub-title text-primary px-3">Pick your type of flight </h5>
+
+                 
+                </div>
+                <div class="row g-4">
+                    
+        <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="img/jet2.png" class="img-fluid w-100 rounded" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="#" class="h4 text-white mb-0">Private </a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="book.html">Book Now</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#"><h4 class="text-white mb-4 py-3"> Private Flights</h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4">VIP attention, express coordination, and personalized support for executive and private flights.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="private-flights.html">Our Service</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+             <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="img/cargo2.png" class="img-fluid w-100 rounded" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="#" class="h4 text-white mb-0">Cargo</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="book.html">Book Now</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#"><h4 class="text-white mb-4 py-3">Cargo</h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4">Efficient cargo services: logistics, customs, ramp handling, and real-time tracking.</p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="cargo.html">Our Service</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+       
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item">
+                            <div class="service-inner">
+                                <div class="service-img">
+                                    <img src="img/commercial2.png" class="img-fluid w-100 rounded" alt="Image">
+                                </div>
+                                <div class="service-title">
+                                    <div class="service-title-name">
+                                        <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                            <a href="#" class="h4 text-white mb-0">Commercial</a>
+                                        </div>
+                                        <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="book.html">Book Now</a>
+                                    </div>
+                                    <div class="service-content pb-4">
+                                        <a href="#"><h4 class="text-white mb-4 py-3">Commercial</h4></a>
+                                        <div class="px-4">
+                                            <p class="mb-4">Comprehensive support for airlines: passenger assistance, crew services, and ground operations. </p>
+                                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="commercial2.html">Our Service</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+ <!-- Counter Facts Start -->
+        <div class="container-fluid counter-facts py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fas fa-passport"></i>
+                            </div>
+                            <div class="counter-content">
+                                <h3>IATA Certified</h3>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value" data-toggle="counter-up">1</span>
+                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="counter-content">
+                                <h3>ISAGO</h3>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value" data-toggle="counter-up">2017</span>
+                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <div class="counter-content">
+                                <h3>Passangers</h3>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value" data-toggle="counter-up">10</span>
+                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">Million</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="counter">
+                            <div class="counter-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="counter-content">
+                                <h3>Clients</h3>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value" data-toggle="counter-up">150</span>
+                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter Facts End -->
+
+<!-- Clients (Logos Only) Start -->
+<div class="container-fluid testimonial overflow-hidden py-5">
+  <div class="container py-5">
+    <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="sub-style">
+        <h5 class="sub-title text-primary px-3">OUR CLIENTS</h5>
+      </div>
+      <h1 class="display-5 mb-0">Trusted By Leading Airlines & Operators</h1>
+    </div>
+
+    <!-- Grid of client logos (no text) -->
+    <div class="row g-4 align-items-center justify-content-center wow fadeInUp" data-wow-delay="0.2s">
+      <!-- Each logo: keep same sizing for neat layout -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 shadow-sm">
+          <img src="img/aircanda-1.png" class="img-fluid" alt="Client 1 logo" style="max-height:60px;">
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 shadow-sm">
+          <img src="img/avianca-2.png" class="img-fluid" alt="Client 2 logo" style="max-height:60px;">
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 shadow-sm">
+          <img src="img/frontier-3.png" class="img-fluid" alt="Client 3 logo" style="max-height:60px;">
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 shadow-sm">
+          <img src="img/spirit-4.png" class="img-fluid" alt="Client 4 logo" style="max-height:60px;">
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 shadow-sm">
+          <img src="img/dhl-5.png" class="img-fluid" alt="Client 5 logo" style="max-height:60px;">
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 shadow-sm">
+          <img src="img/delta-6.png" class="img-fluid" alt="Client 6 logo" style="max-height:60px;">
+        </div>
+      </div>
+
+      <!-- Add more logos as needed, duplicating the block above -->
+    </div>
+
+    <!-- Optional: scrolling carousel version (logos only). Uncomment if you prefer Owl Carousel. -->
+    <!--
+    <div class="owl-carousel wow zoomInDown mt-5" data-wow-delay="0.2s">
+      <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 mx-2">
+        <img src="img/clients/client-1.png" class="img-fluid" alt="Client 1 logo" style="max-height:60px;">
+      </div>
+      <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 mx-2">
+        <img src="img/clients/client-2.png" class="img-fluid" alt="Client 2 logo" style="max-height:60px;">
+      </div>
+      <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 mx-2">
+        <img src="img/clients/client-3.png" class="img-fluid" alt="Client 3 logo" style="max-height:60px;">
+      </div>
+      <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 mx-2">
+        <img src="img/clients/client-4.png" class="img-fluid" alt="Client 4 logo" style="max-height:60px;">
+      </div>
+      <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 mx-2">
+        <img src="img/clients/client-5.png" class="img-fluid" alt="Client 5 logo" style="max-height:60px;">
+      </div>
+      <div class="bg-white rounded d-flex align-items-center justify-content-center p-3 mx-2">
+        <img src="img/clients/client-6.png" class="img-fluid" alt="Client 6 logo" style="max-height:60px;">
+      </div>
+    </div>
+    -->
+  </div>
+</div>
+<!-- Clients (Logos Only) End -->
+
+<!-- Airports (Segmented by Country) Start -->
+<div id="stations" class="office pt-5">
+  <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="sub-style">
+      <h5 class="sub-title text-primary px-3">Airports</h5>
+    </div>
+    <h1 class="display-5 mb-4">Stations & Contacts</h1>
+    <p class="mb-0">Private, charter & cargo handling across Central America.</p>
+  </div>
+        
+
+<!-- ===================== BLOQUE 1 (4 CARDS) ===================== -->
+<div class="row g-4 justify-content-center">
+  <!-- MROC -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MROC.png" class="img-fluid w-100 rounded" alt="MROC — Juan Santamaría Intl">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MROC — Juan Santamaría Intl (Alajuela)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: Costa Rica</p>
+        <a href="tel:+50624414487" class="text-secondary fs-5 mb-2">Office: (506) 2441-4487 ext 105</a>
+        <a href="tel:+50683503263" class="text-secondary fs-5 mb-2">Mobile: (506) 8350-3263</a>
+        <a href="tel:+50683105636" class="text-secondary fs-5 mb-2">Mobile: (506) 8310-5636</a>
+        <a href="mailto:contactus@aerojet.co.cr" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">Main international entry point for Costa Rica.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIR -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/LIR.png" class="img-fluid w-100 rounded" alt="LIR — Daniel Oduber Quirós Intl">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">LIR — Daniel Oduber Quirós Intl (Guanacaste)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: Costa Rica</p>
+        <a href="tel:+50626681161" class="text-secondary fs-5 mb-2">Office: (506) 2668-1161</a>
+        <a href="tel:+50683682846" class="text-secondary fs-5 mb-2">Mobile: (506) 8368-2846</a>
+        <a href="tel:+50684006153" class="text-secondary fs-5 mb-2">Mobile: (506) 8400-6153</a>
+        <a href="mailto:liberia@aerojet.co.cr" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">Gateway to Pacific resorts and marinas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MRPV -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MRPV.png" class="img-fluid w-100 rounded" alt="MRPV — Tobías Bolaños">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MRPV — Tobías Bolaños (San José)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: Costa Rica</p>
+        <a href="tel:+50624414487" class="text-secondary fs-5 mb-2">Office: (506) 2441-4487 ext 105</a>
+        <a href="tel:+50683503263" class="text-secondary fs-5 mb-2">Mobile: (506) 8350-3263</a>
+        <a href="tel:+50683105636" class="text-secondary fs-5 mb-2">Mobile: (506) 8310-5636</a>
+        <a href="mailto:contactus@aerojet.co.cr" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">General aviation hub near downtown San José.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MRLM -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MRLM.png" class="img-fluid w-100 rounded" alt="MRLM — Limón Intl">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MRLM — Limón Intl (Limón)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: Costa Rica</p>
+        <a href="tel:+50624414487" class="text-secondary fs-5 mb-2">Office: (506) 2441-4487 ext 105</a>
+        <a href="tel:+50683503263" class="text-secondary fs-5 mb-2">Mobile: (506) 8350-3263</a>
+        <a href="tel:+50683105636" class="text-secondary fs-5 mb-2">Mobile: (506) 8310-5636</a>
+        <a href="mailto:contactus@aerojet.co.cr" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">Direct connection to the Caribbean coast.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== BLOQUE 2 (4 CARDS) ===================== -->
+<div class="row g-4 justify-content-center mt-5">
+  <!-- MGGT -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MGGT.png" class="img-fluid w-100 rounded" alt="MGGT — La Aurora">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MGGT — La Aurora (Guatemala)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: Guatemala</p>
+        <a href="tel:+50363069970" class="text-secondary fs-5 mb-2">David Batres — +503 6306-9970</a>
+        <a href="mailto:auditoriaregional@aerojet.co.cr" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">Main handling station in Guatemala.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MGMM -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MGMM.png" class="img-fluid w-100 rounded" alt="MGMM — Mundo Maya">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MGMM — Mundo Maya (Petén)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: Guatemala</p>
+        <a href="tel:+50363069970" class="text-secondary fs-5 mb-2">David Batres — +503 6306-9970</a>
+        <a href="mailto:auditoriaregional@aerojet.co.cr" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">Gateway to northern region and archaeological sites.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MSLP -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MSLP.png" class="img-fluid w-100 rounded" alt="MSLP — Monseñor Romero">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MSLP — Monseñor Óscar A. Romero Intl</h4>
+           <p class="text-primary fw-semibold mb-2">Country: El Salvador</p>
+        <a href="tel:+50363069970" class="text-secondary fs-5 mb-2">David Batres — +503 6306-9970</a>
+        <a href="tel:+50376287231" class="text-secondary fs-5 mb-2">Carlos Martinez — +503 7628-7231</a>
+        <a href="mailto:operaciones@adessal.com" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">Main international airport in El Salvador.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MSSS -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MSSS.png" class="img-fluid w-100 rounded" alt="MSSS — Ilopango">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MSSS — Ilopango (San Salvador)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: El Salvador</p>
+        <a href="tel:+50363069970" class="text-secondary fs-5 mb-2">David Batres — +503 6306-9970</a>
+        <a href="tel:+50376287231" class="text-secondary fs-5 mb-2">Carlos Martinez — +503 7628-7231</a>
+        <a href="mailto:operaciones@adessal.com" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">General aviation and regional operations hub.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== BLOQUE 3 (3 CARDS) ===================== -->
+<div class="row g-4 justify-content-center mt-5">
+  <!-- MHLM -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MHLM.png" class="img-fluid w-100 rounded" alt="MHLM — Ramón Villeda Morales">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MHLM — Ramón Villeda Morales (SPS)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: Honduras</p>
+        <a href="tel:+50363069970" class="text-secondary fs-5 mb-2">David Batres — +503-6306-9970</a>
+        <a href="tel:+50433851223" class="text-secondary fs-5 mb-2">Rafael Andrade — +504-3385-1223</a>
+        <a href="mailto:infosap@aeroservicioshn.com" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">Located in San Pedro Sula.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MHTG -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MHTG.png" class="img-fluid w-100 rounded" alt="MHTG — Toncontín">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MHTG — Toncontín (Tegucigalpa)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: Honduras</p>
+        <a href="tel:+50363069970" class="text-secondary fs-5 mb-2">David Batres — +503-6306-9970</a>
+        <a href="tel:+50433851223" class="text-secondary fs-5 mb-2">Rafael Andrade — +504-3385-1223</a>
+        <a href="mailto:infosap@aeroservicioshn.com" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">Capital city station — Tegucigalpa.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MHRO -->
+  <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="office-item p-4">
+      <div class="office-img mb-4">
+        <img src="img/MHRO.png" class="img-fluid w-100 rounded" alt="MHRO — Juan Manuel Gálvez">
+      </div>
+      <div class="office-content d-flex flex-column">
+        <h4 class="mb-2">MHRO — Juan Manuel Gálvez (Roatán)</h4>
+           <p class="text-primary fw-semibold mb-2">Country: Honduras</p>
+        <a href="tel:+50363069970" class="text-secondary fs-5 mb-2">David Batres — +503-6306-9970</a>
+        <a href="tel:+50433851223" class="text-secondary fs-5 mb-2">Rafael Andrade — +504-3385-1223</a>
+        <a href="mailto:infosap@aeroservicioshn.com" class="text-muted fs-5 mb-2">connect@aerojet.co.cr</a>
+        <p class="mb-0">Serving Roatán and the Bay Islands region.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- AIRPORTS SECTION END --> 
+
+<!-- ===================== BLOG SECTION START ===================== -->
+<div class="container-fluid blog-section py-5 bg-light">
+  <div class="container py-5">
+    <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="sub-style">
+        <h5 class="sub-title text-primary px-3">Aviation Insights</h5>
+      </div>
+      <h1 class="display-5 mb-4">Latest News & Articles</h1>
+      <p class="mb-0">Discover updates from Aerojet and the aviation world across Central America.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- BLOG 1 -->
+      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="card border-0 shadow-sm rounded-3 overflow-hidden h-100">
+          <img src="img/best-ground-handling-OG.png" class="card-img-top img-fluid" alt="Private Flights Central America">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <small class="text-muted me-3"><i class="far fa-calendar-alt text-primary me-2"></i>October 2025</small>
+              <small class="text-muted"><i class="far fa-user text-primary me-2"></i>Aerojet Editorial</small>
+            </div>
+            <h4 class="card-title mb-3 text-secondary">Why Aerojet Is the Best Ground Handling Company?</h4>
+            <p class="card-text text-muted mb-4">
+           With over 10 million passengers served and more than 150 loyal clients, Aerojet stands as the region's top-performing ground handling provider backed by global certifications such as IATA, ISAGO, BAA, and NBAA.
+
+            </p>
+            <a href="best-ground-handling-central-america.html" class="btn btn-primary border-secondary rounded-pill py-2 px-4">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG 2 -->
+      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="card border-0 shadow-sm rounded-3 overflow-hidden h-100">
+          <img src="img/FBO-CentralAmerica-Charter-OperatorsOG.png" class="card-img-top img-fluid" alt="Cargo operations Central America">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <small class="text-muted me-3"><i class="far fa-calendar-alt text-primary me-2"></i>September 2025</small>
+              <small class="text-muted"><i class="far fa-user text-primary me-2"></i>Operations Team</small>
+            </div>
+            <h4 class="card-title mb-3 text-secondary">How FBOs in Central America Are Modernizing VIP Travel for Executives and Charter Operators</h4>
+            <p class="card-text text-muted mb-4">
+            As business aviation rapidly grows in Central America, modern FBOs are transforming VIP travel by introducing advanced services, digital coordination and enhanced comfort for executives & charter operators.
+            </p>
+            <a href="FBO-CentralAmerica-Charter-Operators.html" class="btn btn-primary border-secondary rounded-pill py-2 px-4">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOG 3 -->
+      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="card border-0 shadow-sm rounded-3 overflow-hidden h-100">
+          <img src="img/Top-Ground-Handling-Partner-OG.png" class="card-img-top img-fluid" alt="Crew and VIP Support Central America">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center mb-3">
+              <small class="text-muted me-3"><i class="far fa-calendar-alt text-primary me-2"></i>August 2025</small>
+              <small class="text-muted"><i class="far fa-user text-primary me-2"></i>Flight Support Division</small>
+            </div>
+            <h4 class="card-title mb-3 text-secondary">Aerojet the #1 Ground Handling Partner in Central America</h4>
+            <p class="card-text text-muted mb-4">
+            From private jets and cargo freighters to commercial airlines, Aerojet has become the trusted ground handling engine behind Central America's most demanding operations in every turnaround.
+            </p>
+            <a href="Top-Ground-Handling-Partner.html" class="btn btn-primary border-secondary rounded-pill py-2 px-4">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===================== BLOG SECTION END ===================== -->
+    
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Us</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 🇨🇷 🇭🇳 🇬🇹 🇸🇻 🇵🇦 </a>
+                            <a href="contactus@aerojet.co.cr"><i class="fas fa-envelope me-2"></i> contactus@aerojet.co.cr </a>
+                            <a href="#"><i class="fas fa-phone me-2"></i> 🇨🇷 +506 2441-4487 ext 105</a>
+                            <a href="#" class="mb-3"><i class="fas fa-phone me-2"></i> 🇭🇳 +504 3392-2413   </a>
+                            <a href="#" class="mb-3"><i class="fas fa-phone me-2"></i> 🇬🇹 +503 6306-9970    </a>
+                            <a href="#" class="mb-3"><i class="fas fa-phone me-2"></i> 🇸🇻 +503 6306-9970    </a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href="https://www.facebook.com/aerojethandlinggroup/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href="https://www.instagram.com/aerojethandlinggroup/"><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href="https://cr.linkedin.com/company/aerojet-handling-group"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+          
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Aerojet</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author's credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author's credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://theaihumans.com">AI Humans</a> Powered By <a class="border-bottom text-white" href="index.html">AHG</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Airplane Animation Script -->
+    <script>
+        const airplane = document.querySelector('.airplane');
+        const progressFill = document.querySelector('.progress-fill');
+        let lastScrollTop = 0;
+        let ticking = false;
+
+        // Función para actualizar la posición del avión y la barra de progreso
+        function updateAirplanePosition() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // Calcular el porcentaje de scroll (0 a 1)
+            const scrollPercent = scrollTop / (documentHeight - windowHeight);
+            
+            // Actualizar la barra de progreso
+            progressFill.style.height = (scrollPercent * 100) + '%';
+            
+            // Calcular la posición vertical del avión (con margen)
+            const minPosition = 50; // píxeles desde arriba
+            const maxPosition = windowHeight - 100; // píxeles desde arriba
+            const airplaneTop = minPosition + (scrollPercent * (maxPosition - minPosition));
+            
+            // Aplicar la posición
+            airplane.style.top = airplaneTop + 'px';
+            
+            // Determinar dirección del scroll
+            if (scrollTop > lastScrollTop) {
+                // Scrolling hacia abajo
+                airplane.classList.remove('going-up');
+                airplane.classList.add('going-down');
+            } else if (scrollTop < lastScrollTop) {
+                // Scrolling hacia arriba
+                airplane.classList.remove('going-down');
+                airplane.classList.add('going-up');
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            ticking = false;
+        }
+
+        // Optimización con requestAnimationFrame
+        function requestTick() {
+            if (!ticking) {
+                window.requestAnimationFrame(updateAirplanePosition);
+                ticking = true;
+            }
+        }
+
+        // Event listener para el scroll
+        window.addEventListener('scroll', requestTick, { passive: true });
+
+        // Inicializar posición al cargar
+        updateAirplanePosition();
+    </script>
+    </body>
+
+</html>
